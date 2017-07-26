@@ -55,6 +55,10 @@ var inline_src = (<><![CDATA[
                     }, 0);
                 });
                 
+                var a = el.find("a");
+                a.html(a.children());
+                a.append(subLabel);
+                
                 let cel = loadedFilters[category];
                 cel.find(".select.data .options").append(el);
                 
