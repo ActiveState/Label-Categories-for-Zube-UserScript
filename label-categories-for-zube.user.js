@@ -105,7 +105,7 @@ var inline_src = (<><![CDATA[
                 $(".sprintboard-link.active").length ||
                 $(".issue-manager-link.active").length)
             {
-                whenElemExists(".cards-container", loadFilterList);
+                whenElemExists(".cards-container, .cards-list-container", loadFilterList);
             }
         });
     };
